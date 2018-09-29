@@ -7,6 +7,20 @@
 //
 
 import Foundation
-
-print("Hello, World!")
-
+var i=0
+var j=0
+var temp=0
+var num:[Int]=[1,9,7,3,4,5,7,2,8,0]
+for i in 0...9
+{
+    for j in i...9
+    {
+        if num[i]<num[j]
+        {
+            temp=num[i]
+            num[i]=num[j]
+            num[j]=temp
+        }
+    }
+    print(num[i])
+}
